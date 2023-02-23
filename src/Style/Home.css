@@ -1,0 +1,30 @@
+.container-fluid{
+    background-color: rgb(108, 8, 223);
+    
+
+
+}
+.Logo{
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-evenly;
+}
+.fileupload{
+    background-color: rgb(252, 234, 209);
+    height: 800px;
+    text-align: center;
+    width: 100%;
+}
+.emoji{
+    background-color: aliceblue;
+    height: 800px;
+    text-align: center;
+    width: 100%;
+}

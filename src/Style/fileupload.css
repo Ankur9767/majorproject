@@ -1,0 +1,13 @@
+.fileupload{
+    height: 500px;
+    background-image: url(https://i.imgur.com/xKrSHaM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.inputandupload{
+    text-align: center;  
+    padding-top: 250px;  
+   
+}
