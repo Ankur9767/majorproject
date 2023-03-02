@@ -1,49 +1,45 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import '../Style/fileupload.css';
-import {  
-  Link
-} from "react-router-dom";
+import bg from '../Media/bg2.png'
 
 function Fileupload() {
   const [selectedFile, setSelectedFile] = useState(null);
-  const [isFilePicked, setIsFilePicked] = useState(false);
 
-  const handleFileChange = (event) => {
+  const handleFileInputChange = (event) => {
     setSelectedFile(event.target.files[0]);
-    setIsFilePicked(true);
   };
 
-  const handleFileUpload = () => {
-    const formData = new FormData();
-
-    formData.append('file', selectedFile);
-
-    // Add additional form data here, such as user ID or metadata
-    // formData.append('userId', userId);
-
-    fetch('http://example.com/api/upload', {
-      method: 'POST',
-      body: formData
-    })
-      .then((response) => {
-        console.log(response);
-        alert('File uploaded successfully.');
-      })
-      .catch((error) => {
-        console.error(error);
-        alert('Failed to upload file.');
-      });
+  const handleUploadButtonClick = () => {
+    // Upload logic here
   };
-
+ 
   return (
-    <div>
-      <div className="container fileupload">
-        <div className="inputandupload">
-       <input type="file" name="file"  onChange={handleFileChange} />
-      <button onClick={handleFileUpload} className="mt-5">Upload</button>
+    <div className="file-uploader-container">
+    <div className="container box">
+    <label for="file-input">
+    <img src={bg} alt="Upload Image" />
+    
+     </label>
+      <input
+        type="file"
+        id="file-input"
+        className="input-file"
+        onChange={handleFileInputChange}
+      />
       </div>
-      <Link to="/dashboard"   className="dashboard"> Generate </Link>
-      </div>
+      <label htmlFor="file-input" className="file-input-label">
+        {selectedFile ? selectedFile.name : 'Choose a file'}
+      </label>
+      <Link to="dashboard">
+      <button
+        onClick={handleUploadButtonClick}
+        disabled={!selectedFile}
+        className="upload-button"
+      >
+        Upload
+      </button>
+      </Link>
     </div>
   );
 }

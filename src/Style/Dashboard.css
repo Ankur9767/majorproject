@@ -1,0 +1,82 @@
+*{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.piedig{
+    text-align: center;    
+    margin-top: 30px;  
+    height: 400px;
+    margin-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.container-fluid{
+    
+    
+    
+    height: 100vh;
+    justify-content: space-between;
+    background-color: rgb(136, 190, 190);
+}
+.linechart{
+    text-align: center;
+
+    margin-top: 30px;
+    height: 400px;
+    margin-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.wordcloud{
+
+        text-align: center;
+        width: 35vw;
+        margin-top: 20px;
+        height: 45vh; 
+        box-shadow: rgba(241, 234, 234, 0.24) 0px 3px 8px;
+        background-color: rgb(255, 255, 255);
+}
+.audioEmoji{
+    text-align: center;
+    width: 30vw;
+    margin-top: 20px;
+    height: 45vh;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+    
+}
+.audioEmoji2{
+    text-align: center;
+    width: 30vw;
+    margin-top: 20px;
+    height: 45vh;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+}
+.text-transcript{
+  
+        text-align: center;
+        width: 35vw;
+        margin-top: 20px;
+        height: 45vh; 
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+
+}
+
+.LstmModel{
+    text-align: center;
+    width: 30vw;
+    margin-top: 20px;
+    height: 30vh;  
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  box-shadow: inset 0 0 12px 12px white, inset 0 0 3px 2px white;
+
+}

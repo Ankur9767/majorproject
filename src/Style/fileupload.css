@@ -1,13 +1,64 @@
-.fileupload{
-    height: 500px;
-    background-image: url(https://i.imgur.com/xKrSHaM.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-}
-
-.inputandupload{
-    text-align: center;  
-    padding-top: 250px;  
-   
-}
+.file-uploader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .file-input-label {
+    background-color: #e0e0e0;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-input-label:hover {
+    background-color: #ccc;
+  }
+  
+  .upload-button {
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .upload-button:hover:not(:disabled) {
+    background-color: #008c9e;
+  }
+  .box{
+    position: relative;
+    display: inline-block;
+  }
+  .box label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: #00bcd4 2px solid;
+  }
+  .box input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  
