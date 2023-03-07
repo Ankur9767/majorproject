@@ -4,6 +4,7 @@ import '../Style/Dashboard.css'
 import LineCharttt from './charts/LineCharttt';
 import Wordcloud from './charts/Wordcloud';
 import Emoji from './Emoji'
+import Transcript from './Transcript';
 
 function Dashboard() {
   const data = [
@@ -14,49 +15,27 @@ function Dashboard() {
   ];
   return (
     <div>
-    <div className="container-fluid d-flex flex-row">
-    <div className="Emojiis">
-    <div className="audioEmoji">
-    <p>Result from Audio</p>
-      <Emoji />
-    </div>
-    <div className="audioEmoji2">
-    <p>Result from Text</p>
-      <Emoji />
-    </div>
+    <div className="container-fluid d-flex flex-row">  
 
-    </div>
-    <div className="middlevala">
-    <div className="wordcloud">
+    
+    {/* <div className="middlevala">
+    {/* <div className="wordcloud">
     <p> Wordcloud</p>
       <Wordcloud />
-    </div>
+    </div> */} 
+
     <div className="text-transcript">
-      <p>text-transcript</p>
+      <p><Transcript /></p>
     </div>
 
     </div>
-    <div className="models">
-    <div className="LstmModel">
-      <p>LSTM model</p>
-      <LineChart />
-    </div>
-    <div className="LstmModel">
-      <p>LSTM model</p>
-      <LineChart />
-    </div>
-    <div className="LstmModel">
-      <p>LSTM model</p>
-      <LineChart />
-    </div>
-
-
-
     </div>
     
-    </div>
-      
-    </div>
+
+
+    
+    
+   
   )
 }
 

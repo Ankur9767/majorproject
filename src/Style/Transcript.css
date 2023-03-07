@@ -1,0 +1,29 @@
+.transcript-box{
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 30px;
+}
+.textt{
+    margin-left: 30px;
+    padding: 40px;
+
+}
+.SpeakerName{
+    border: 2px solid green;
+    font-size: 20px;
+    text-align: center;
+    padding: max-content;
+    font-weight: 600;
+    background-color: rgb(24, 109, 45);
+    margin: 20px;
+    color: white;
+}
+.label{
+    text-align: center;
+    margin-top: inherit;
+}
+.Emojiie{
+    text-align: center;
+    margin-top: inherit;
+}
